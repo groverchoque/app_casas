@@ -7,18 +7,20 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.example.seguridad22.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link publicarAR.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link publicarAR#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class publicarAR extends Fragment {
+
+    Spinner comboPublicar;
+
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -34,15 +36,7 @@ public class publicarAR extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment publicarAR.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static publicarAR newInstance(String param1, String param2) {
         publicarAR fragment = new publicarAR();
         Bundle args = new Bundle();
@@ -54,12 +48,40 @@ public class publicarAR extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        //setSpinner();
+
+
         super.onCreate(savedInstanceState);
+
+        //comboPublicar= getView().findViewById(R.id.spinner_publi_type);
+      //  ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,
+        //        R.array.combo_spiner,android.R.layout.simple_spinner_item);
+        //comboPublicar.setAdapter(adapter);
+
+
+
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
+    /*
+    private void setSpinner() {
+        type = new ArrayList<>();
+        type.add("Comprador");
+        type.add("Vendedor");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
+        Spinner spinner = getView().findViewById(R.id.spinner_publi_type);
+        spinner.setAdapter(adapter);
+        //spinner.getSelectedItemPosition();
+    }
+    */
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

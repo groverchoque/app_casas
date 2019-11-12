@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import cz.msebera.android.httpclient.Header;
 
 public class registro extends AppCompatActivity {
+
     ArrayList<String> type;
 
     @Override
@@ -84,6 +85,7 @@ public class registro extends AppCompatActivity {
        type = new ArrayList<>();
        type.add("Comprador");
        type.add("Vendedor");
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
        Spinner spinner = findViewById(R.id.type_txt);
         spinner.setAdapter(adapter);
@@ -92,7 +94,7 @@ public class registro extends AppCompatActivity {
 
     public void enviar(View view) {
         Toast.makeText(registro.this, "registrando usuario espere", Toast.LENGTH_LONG).show();
-       sendData();
+        sendData();
         sendMensaje();
     }
 }

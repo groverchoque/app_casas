@@ -14,14 +14,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteX="-200dp"
             tools:layout_editor_absoluteY="0dp">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#FFFFFF"
                 android:orientation="vertical">
 
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:fontFamily="monospace"
+                    android:text="Operacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="403dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Operacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_publi_type" />
 
                 <EditText
                     android:id="@+id/editText5"
@@ -35,29 +59,33 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
+
                 <EditText
                     android:id="@+id/editText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="52dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:text="Name"
+                    android:textColorHighlight="#00741818"
+                    android:textColorHint="#00D39A9A"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    tools:layout_editor_absoluteY="333dp" />
 
                 <EditText
                     android:id="@+id/editText2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="148dp"
-                    android:layout_marginTop="172dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="78dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editText" />
+                    tools:layout_editor_absoluteY="444dp" />
 
                 <EditText
                     android:id="@+id/editText3"
@@ -83,10 +111,89 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
+                <Spinner
+                    android:id="@+id/spinner_publi_type"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+
+
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="136dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animationCache="false"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            style="@android:style/Widget.Holo.TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="56dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="monospace"
+                            android:text="Publicar tu anuncio "
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textVi"
+                            style="@android:style/Widget.Holo.TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="56dp"
+                            android:fontFamily="monospace"
+                            android:text="Datos del inmueble"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toEndOf="@+id/img55"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                        <ImageView
+                            android:id="@+id/img55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="101dp"
+                            android:src="@android:drawable/ic_notification_overlay"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Tipo de inmueble"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
             </android.support.constraint.ConstraintLayout>
 
 
         </ScrollView>
+
 
 
     </android.support.constraint.ConstraintLayout>

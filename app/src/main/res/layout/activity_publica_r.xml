@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublicaR">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="43dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="132dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="monospace"
+                    android:text="Num. de baños"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_num_habi" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:animationCache="false"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_zona_pub">
+
+                    <TextView
+                        android:id="@+id/textviii1"
+                        style="@android:style/Widget.Holo.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
+                        android:text="Caracteristicas del inmueble"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/ggg44"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ggg44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@android:drawable/ic_notification_overlay"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Ubicacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_precioPub" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="315dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Ubicacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    tools:layout_editor_absoluteX="37dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="monospace"
+                    android:text="Bs."
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toEndOf="@+id/txt_precioPub"
+                    app:layout_constraintTop_toBottomOf="@+id/spin_operacion" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="149dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="monospace"
+                    android:text="Superficie"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="107dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="Direccion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="Numero"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_direc_pub" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="monospace"
+                    android:text="m2"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toEndOf="@+id/txt_superf_m2"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="monospace"
+                    android:text="Descripcion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_titulo_publi" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="137dp"
+                    android:fontFamily="monospace"
+                    android:text="Bs."
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    tools:layout_editor_absoluteX="226dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="174dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="Num. habitaciones:"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_superf_m2" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="monospace"
+                    android:text="Titulo de la publicacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="127dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="Num. de planta"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_num_ban" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="Zona"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_num_publ" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/precio"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spin_operacion" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Operacion"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_publi_type" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_publi_type"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+
+
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="405dp"
+                    android:layout_height="90dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animationCache="false"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            style="@android:style/Widget.Holo.TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="56dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="monospace"
+                            android:text="Publicar tu anuncio "
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textVi"
+                            style="@android:style/Widget.Holo.TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="monospace"
+                            android:text="Datos del inmueble"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toEndOf="@+id/img55"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                        <ImageView
+                            android:id="@+id/img55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="68dp"
+                            android:src="@android:drawable/ic_notification_overlay"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Tipo de inmueble"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+                <Button
+                    android:id="@+id/btn_publicar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="92dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/botonesredon"
+                    android:onClick="enviar_publ"
+                    android:text="Registrarse"
+                    android:textColor="@android:color/black"
+                    app:backgroundTint="#00BCD4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <Spinner
+                    android:id="@+id/spin_operacion"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+
+
+                    android:layout_marginStart="55dp"
+
+                    android:layout_marginTop="8dp"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <EditText
+                    android:id="@+id/txt_precioPub"
+                    android:layout_width="143dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <EditText
+                    android:id="@+id/txt_direc_pub"
+                    android:layout_width="254dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="56dp"
+                    android:ems="10"
+                    android:hint="Calle"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <EditText
+                    android:id="@+id/txt_zona_pub"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:hint="Zona"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="236dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="16dp"
+                    android:text="____________________________"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <EditText
+                    android:id="@+id/txt_num_publ"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="number|text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/txt_superf_m2"
+                    android:layout_width="143dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <EditText
+                    android:id="@+id/txt_num_habi"
+                    android:layout_width="45dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <EditText
+                    android:id="@+id/txt_num_ban"
+                    android:layout_width="45dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <EditText
+                    android:id="@+id/txt_num_planta"
+                    android:layout_width="45dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_num_planta">
+
+
+                    <TextView
+                        style="@android:style/Widget.Holo.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
+                        android:text="Resumen de la publicacion"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/aaas"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/aaass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@android:drawable/ic_notification_overlay"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/txt_titulo_publi"
+                    android:layout_width="254dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/txt_desc_publ"
+                    android:layout_width="234dp"
+                    android:layout_height="109dp"
+                    android:layout_marginStart="55dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Aqui tu descripcion"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_desc_publ">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@android:style/Widget.Holo.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
+                        android:text="Foto"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/aaas"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/asssssd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@android:drawable/ic_notification_overlay"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

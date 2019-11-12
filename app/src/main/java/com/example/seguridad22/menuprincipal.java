@@ -123,8 +123,11 @@ public class menuprincipal extends AppCompatActivity
 
         } else if (id == R.id.nav_publicar) {
 
-            fragment = new publicarAR();
-            FragmentoSeleccionado = true;
+
+            Intent Publicar = new Intent(this, PublicaR.class);
+            startActivity(Publicar);
+            //fragment = new publicarAR();
+            //FragmentoSeleccionado = true;
 
         } else if (id == R.id.nav_misPubl) {
 

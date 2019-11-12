@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_spiner">
+        <item>Vivienda</item>
+        <item>Departamento</item>
+        <item>Terreno</item>
+        <item>Local Comercial</item>
+        <item>Negocio</item>
+        <item>Oficina</item>
+    </string-array>
+</resources>
+
+
+
