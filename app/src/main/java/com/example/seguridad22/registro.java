@@ -93,6 +93,12 @@ public class registro extends AppCompatActivity {
     }
 
     public void enviar(View view) {
+        
+        
+        
+        
+        
+        
         Toast.makeText(registro.this, "registrando usuario espere", Toast.LENGTH_LONG).show();
         sendData();
         sendMensaje();
