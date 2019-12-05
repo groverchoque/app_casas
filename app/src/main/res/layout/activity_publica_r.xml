@@ -85,17 +85,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/txt_precioPub" />
 
                 <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="315dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Ubicacion"
-                    android:textColor="@android:color/black"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                    tools:layout_editor_absoluteX="37dp" />
-
-                <TextView
                     android:id="@+id/textView12"
                     android:layout_width="51dp"
                     android:layout_height="23dp"
@@ -162,17 +151,6 @@
                     android:textColor="@android:color/black"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txt_titulo_publi" />
-
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="51dp"
-                    android:layout_height="23dp"
-                    android:layout_marginTop="137dp"
-                    android:fontFamily="monospace"
-                    android:text="Bs."
-                    android:textColor="@android:color/black"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                    tools:layout_editor_absoluteX="226dp" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -327,7 +305,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="92dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/botonesredon"
                     android:onClick="enviar_publ"
@@ -337,7 +315,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
                 <Spinner
                     android:id="@+id/spin_operacion"
@@ -466,7 +444,7 @@
                         android:text="Resumen de la publicacion"
                         android:textColor="@android:color/background_light"
                         android:textSize="16sp"
-                        app:layout_constraintStart_toEndOf="@+id/aaas"
+                        app:layout_constraintStart_toEndOf="@+id/aaass"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
@@ -522,13 +500,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
-                        android:layout_marginTop="8dp"
                         android:fontFamily="monospace"
                         android:text="Foto"
                         android:textColor="@android:color/background_light"
                         android:textSize="16sp"
-                        app:layout_constraintStart_toEndOf="@+id/aaas"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintStart_toEndOf="@+id/asssssd"
+                        tools:layout_editor_absoluteY="7dp" />
 
                     <ImageView
                         android:id="@+id/asssssd"
@@ -539,6 +516,19 @@
                         android:src="@android:drawable/ic_notification_overlay"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="395dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
                 </android.support.constraint.ConstraintLayout>
 
 
