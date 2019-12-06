@@ -23,7 +23,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import cz.msebera.android.httpclient.Header;
 
-//registro google implements GoogleApiClient.OnConnectionFailedListener
+
+
+
 public class login_google extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     Button btnLogin, btnRegistrar;
     private  EditText tx_user, tx_pas;
@@ -104,8 +106,6 @@ public class login_google extends AppCompatActivity implements GoogleApiClient.O
         startActivity(intent);
     }
 
-
-
     //creacion de el metodo login boton  bASE DE DATOS
     public void btnLogineemail(View view) {
 
@@ -118,48 +118,41 @@ public class login_google extends AppCompatActivity implements GoogleApiClient.O
         if (pastxt.length() == 0){
             Toast.makeText(this, "Debes ingresar un password",Toast.LENGTH_LONG).show();
         }
+        //si cumple
         if (nombretxt.length() != 0 && pastxt.length() != 0 ){
 
-            //Toast.makeText(this, "Registro en proceso",Toast.LENGTH_LONG).show();
-            //sendLogin();
+            Toast.makeText(this, "Registro en proceso",Toast.LENGTH_LONG).show();
+            sendLogin();
 
 
-
-            Intent btnlogin  = new Intent(login_google.this,menuprincipal.class);
-            startActivity(btnlogin);
 
         }
     }
 
-   private void sendLogin() {
+    private void sendLogin() {
         EditText email = findViewById(R.id.email_txt);
         EditText password = findViewById(R.id.password_txt);
-
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
-
         params.add("email",email.getText().toString());
         params.add("password",password.getText().toString());
-
         client.post(Utils.LOGIN_SERVICE, params, new JsonHttpResponseHandler(){
-
-          public void onSuccess(int statusCode, Header[] headers,JSONObject response) {
-
+            public void onSuccess(int statusCode, Header[] headers,JSONObject response) {
                 if (response.has("token")) {
-                   try {
-                       Utils.token = response.getString("token");
+                    try {
+                        Utils.TOKEN = response.getString("token");
+                        Toast.makeText( login_google.this, "registrado satisfactorio", Toast.LENGTH_LONG).show();
 
-                       Toast.makeText( login_google.this, "registrando satisfactorio", Toast.LENGTH_LONG).show();
+                        //aqui para iniciar la activisdad principal
 
-                       Intent btnlogin  = new Intent(login_google.this,MainActivity.class);
-                       startActivity(btnlogin);
-
+                        Intent btnlogin  = new Intent(login_google.this,menuprincipal.class);
+                        startActivity(btnlogin);
 
                     } catch (JSONException e) {
-                      e.printStackTrace();
-                  }
+                        e.printStackTrace();
+                    }
                 }
-          }
+            }
 
         });
 
@@ -167,10 +160,12 @@ public class login_google extends AppCompatActivity implements GoogleApiClient.O
 
     //boton registrsr
     public void btnRegistrar(View view) {
+
         Intent btnregistr = new Intent(this, registro.class);
         startActivity(btnregistr);
 
     }
     ///   ter ino de metodo login google
 
- }
+
+}

@@ -34,8 +34,6 @@ public class registro extends AppCompatActivity {
     private void sendData() {
         EditText name = findViewById(R.id.name_txt);
         EditText lastname = findViewById(R.id.lastname_txt);
-        EditText  addresss= findViewById(R.id.addres);
-        EditText  city_t= findViewById(R.id.city_txt);
         EditText passwords = findViewById(R.id.password);
         EditText emails = findViewById(R.id.email);
         EditText phones = findViewById(R.id.telefono_txt);
@@ -49,8 +47,6 @@ public class registro extends AppCompatActivity {
         params.add("type", type.get(types.getSelectedItemPosition()));
         params.add("name", name.getText().toString());
         params.add("lastname", lastname.getText().toString());
-        params.add("city", city_t.getText().toString());
-        params.add("address", addresss.getText().toString());
         params.add("phone", phones.getText().toString());
         params.add("email", emails.getText().toString());
         params.add("password", passwords.getText().toString());

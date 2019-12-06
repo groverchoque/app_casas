@@ -522,12 +522,103 @@
                     android:id="@+id/constraintLayout3"
                     android:layout_width="395dp"
                     android:layout_height="300dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="24dp"
                     android:layout_marginTop="7dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="24dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/nameMe"
+                            android:layout_width="169dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="28dp"
+                            android:ems="10"
+                            android:hint="Nombre Menu"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/priceMe"
+                            android:layout_width="169dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:ems="10"
+                            android:hint="Precio"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/nameMe" />
+
+                        <Button
+                            android:id="@+id/btn_RegisterMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginStart="52dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="Registrar"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/priceMe" />
+
+                        <ImageView
+                            android:id="@+id/imgMe"
+                            android:layout_width="180dp"
+                            android:layout_height="123dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.685"
+                            app:layout_constraintStart_toEndOf="@+id/nameMe"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_menu_gallery" />
+
+                        <Button
+                            android:id="@+id/btn_imgMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="Tomar Foto"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.621"
+                            app:layout_constraintStart_toEndOf="@+id/btn_RegisterMe"
+                            app:layout_constraintTop_toBottomOf="@+id/imgMe" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/reciclerMe"
+                            android:layout_width="369dp"
+                            android:layout_height="311dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+                            app:layout_constraintVertical_bias="0.0"></android.support.v7.widget.RecyclerView>
+
+
+                    </android.support.constraint.ConstraintLayout>
 
                 </android.support.constraint.ConstraintLayout>
 
